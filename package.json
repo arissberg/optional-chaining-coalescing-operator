@@ -1,0 +1,24 @@
+{
+  "name": "optional-chaining-and-nullish-coalescing-operators",
+  "version": "1.0.0",
+  "description": "An example using optional chaining with nullish coalescing operator",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-nullish-coalescing-operator": "7.8.3",
+    "@babel/plugin-proposal-optional-chaining": "7.9.0",
+    "babel-core": "6.26.3",
+    "normalize.css": "8.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "parcel-bundler": "^1.6.1"
+  },
+  "keywords": [
+    "es2020",
+    "javascript"
+  ]
+}

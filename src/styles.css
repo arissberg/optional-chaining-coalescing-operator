@@ -1,0 +1,73 @@
+body {
+  font-family: "Raleway", sans-serif;
+  background: #fafafa;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  min-width: 300px;
+  padding: 1em;
+  background: white;
+  margin: 50px 10px 10px;
+  border: 5px solid white;
+  border-radius: 3px 25px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.05),
+    0 10px 18px rgba(0, 0, 0, 0.02);
+}
+
+.card > h3 {
+  flex: 100%;
+  margin: 0 0 1em 0;
+}
+.card > p {
+  margin: 0 0 1em;
+}
+
+.card .avatar {
+  margin-top: -60px;
+  margin-bottom: 10px;
+}
+
+.avatar img {
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.♂ {
+  background: linear-gradient(transparent 30px, white 30px),
+    linear-gradient(to right, lightblue 30px, white 30px);
+}
+.♂:before,
+.♀:before {
+  content: "♂";
+  position: absolute;
+  left: 7px;
+  top: 7px;
+}
+.♀ {
+  background: linear-gradient(transparent 30px, white 30px),
+    linear-gradient(to right, pink 30px, white 30px);
+}
+
+.♀:before {
+  content: "♀";
+}
