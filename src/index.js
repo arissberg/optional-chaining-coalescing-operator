@@ -7,7 +7,7 @@ const container = document.querySelectorAll(".container")[0];
 
 people.forEach(person => {
   const name = `${person?.firstName ?? "John"} ${person?.lastName ?? "Doe"}`;
-  const weight = `${person?.stats?.weight ?? "Uknown"} lbs`;
+  const weight = `${person?.stats?.weight ?? "Unknown"} lbs`;
 
   container.innerHTML += `
   <div class="card ${person?.gender}">
