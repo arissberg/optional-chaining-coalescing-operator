@@ -7,7 +7,7 @@ const container = document.querySelectorAll(".container")[0];
 
 people.forEach(person => {
   const name = `${person?.firstName ?? "John"} ${person?.lastName ?? "Doe"}`;
-  const weight = `${person?.stats?.weight ?? "Unknown"} lbs`;
+  const weight = person?.stats?.weight ? person.stats.weight + 'lbs' : undefined;
 
   container.innerHTML += `
   <div class="card ${person?.gender}">
@@ -15,8 +15,9 @@ people.forEach(person => {
       <img src="https://api.adorable.io/avatars/90/${name}@adorable.io.png" alt="${name}" />
     </div>
     <h3>${name}</h3>
-    <p>🎂 ${person?.stats?.age ?? 'N/A'}</p>
-    <p>⚖ ${weight}</p>
+    
+    <p>🎂 ${person?.stats?.age ?? 'Unknown'}</p>
+    <p>⚖ ${weight ?? 'Unknown'}</p>
   </div>
   `;
 });
